@@ -1,0 +1,19 @@
+extend home
+
+block box
+    .box-inside(style="padding:20px")
+        .box-radio(style="display:inline-flex;gap:30px;")
+            .radio-cls
+                input(type="radio" id="twitterUrl" name="detailsType" checked="true") 
+                label(for="twitterUrl") Twitter URL
+            .radio-cls
+                input(type="radio" id="tweet" name="detailsType") 
+                label(for="tweet") Tweet 
+        .box-twitter(style="display:block")
+            h3 Your  Twitter URL
+            p Enter Your  Twitter URL here..
+            input(type="text",class="inpT",id="twUrl", placeholder="https://twitter.com")
+        .box-tweet(style="display:none")
+            h3 Your Tweet
+            p Enter Your Tweet here..
+            textarea(id="msgtext" style="Width:100%;resize:none;height:120px;font-size:17px;resize:vertical;",placeholder="@freeQRCode is the free qr code generator #qrcode")

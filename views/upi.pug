@@ -1,0 +1,33 @@
+extend home
+
+block box
+    .box-inside(style="padding:20px")
+        .box-radio(style="display:inline-flex;gap:30px;")
+            .radio-cls
+                input(type="radio" id="withAcc" name="detailsType" checked="true") 
+                label(for="withAcc") With Account Details
+            .radio-cls
+                input(type="radio" id="withUPI" name="detailsType") 
+                label(for="withUPI") With @upi ID
+        .box-Acc(style="display:block")
+            h3 Your Account Details
+            p Account Name 
+            input(type="text",class="inpT",id="accName")
+            p Account Number 
+            input(type="text",class="inpT",id="accNumber")
+            p IFSC Code  
+            input(type="text",class="inpT",id="accIFSC")
+        .box-Upi(style="display:none")
+            h3 Your UPI Details  
+            p User Name 
+            input(type="text",class="inpT",id="upiName")
+            p User @upi Id
+            input(type="text",class="inpT",id="upiId")
+        .box-check(style="font-size: 20px;margin: 20px 0px 0px 0px;")
+            input(type="checkbox" id="withAmount")
+            label(for="withAmount") With Amount 
+        .box-amt(style="display:none")
+            input(type="text",class="inpT",id="amtEnter", placeholder="")
+
+
+

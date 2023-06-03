@@ -1,0 +1,19 @@
+extend home
+
+block box
+    .box-inside(style="padding:20px")
+        .box-radio(style="display:inline-flex;gap:30px;")
+            .radio-cls
+                input(type="radio" id="fbUrl" name="detailsType" checked="true") 
+                label(for="fbUrl") Facebook URL
+            .radio-cls
+                input(type="radio" id="shareUrl" name="detailsType") 
+                label(for="shareUrl") Share URL
+        .box-fb(style="display:block")
+            h3 Your Facebook URL
+            p Enter Your Facebook URL here..
+            input(type="text",class="inpT",id="fbText",placeholder="https://facebook.com")
+        .box-share(style="display:none")
+            h3 Your Share URL
+            p Enter Your Share URL here..
+            input(type="text",class="inpT",id="shareText",placeholder="https://")

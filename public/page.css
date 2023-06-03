@@ -1,0 +1,99 @@
+a{
+    text-decoration: none !important;
+}
+.opt-btn,a {
+    color: gray;
+    cursor: pointer !important;
+    
+}
+.opt-btn:hover {
+    color: darkcyan;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 4px solid darkcyan;
+    transition: all .3s;
+}
+.active {
+    color: darkcyan;
+    font-size: 25px;
+    font-weight: 1000;
+    border-bottom: 4px solid darkcyan;
+}
+.inpT{
+    width: 100%;
+    border: none;
+    height: 30px;
+}
+input:focus {
+    outline:none;
+}
+.btn-box{
+    padding: 10px;
+    text-align: center;
+}
+.btn{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.btn:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+.img-box{
+    margin: 0px 80px 10px 80px;
+    background-color:#adcfcf;
+    display:none;
+    border-top:3px solid darkcyan;
+    text-align: center;
+}
+input[type=radio],input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+}
+.radio-cls{
+    display: flex;
+    align-items: center;
+}
+#map {
+  height: 400px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
